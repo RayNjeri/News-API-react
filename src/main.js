@@ -1,14 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
+import Home from './components/Home.js';
 
-class App extends Component {
-    render() {
-        return (
-            <div>
-                Hey
-            </div>
-        );
-    }
-}
+ReactDOM.render(<Home />, document.getElementById('app'))
 
-ReactDOM.render(<App />, document.getElementById("app"));
+/*ReactDOM.render((
+    <Router history={browserHistory}>
+        <Route path="/" component={App}>
+            <IndexRoute component={Home} />
+        </Route>
+    </Router>
+
+), document.getElementById('app'))*/

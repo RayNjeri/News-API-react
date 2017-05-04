@@ -1,9 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sources Component snapshot for sources component 1`] = `
+exports[`Sources components snapshot for sources component 1`] = `
 <div>
-  <h1>
+  <h2>
     SOURCES
-  </h1>
+  </h2>
 </div>
 `;

@@ -1,13 +1,15 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import shallowToJSON from 'enzyme-to-json';
-import Home from '../components/Header.js';
+import Header from '../components/Header.js';
 
 describe('Header Component', () => {
     it('Snapshot of Header Component', () => {
         const headers = shallow(<Header />);
+        // console.log(headers.debug());
         const tree = shallowToJSON(headers);
-        expect(h1.getDOMNode().textContent).toEqual("THE NEWS HUB");
+        expect(headers.containsMatchingElement(<h1>THE NEWS HUB.</h1>)).toBe(true);
+        // expect(headers.containsMatchingElement(<h1 />)).toBe(true)
         expect(tree).toMatchSnapshot();
     });
 });

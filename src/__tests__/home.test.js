@@ -1,7 +1,7 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import shallowToJSON from 'enzyme-to-json';
-import Home from '../components/Home.js';
+import Home from '../components/Home';
 
 describe('Home Component', () => {
     it('Should render a home page apperance', () => {

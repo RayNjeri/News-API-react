@@ -1,8 +1,8 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import shallowToJSON from 'enzyme-to-json';
-import ReactTestUtils from 'react-dom/test-utils';
-import Sourcesearch from '../components/SourceSearch.js';
+import TestUtils from 'react-addons-test-utils';
+import Sourcesearch from '../components/Sourcesearch.js';
 
 let items = ['Country', 'Language', 'Category'];
 
@@ -33,5 +33,4 @@ describe('Search source dropdown button', () => {
             expect(y.refs.button.getDOMNode().textContent).toEqual(value);
         })
     });
-}
-
+})

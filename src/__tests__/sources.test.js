@@ -1,6 +1,4 @@
 import React from 'react';
-import React from 'react-addons';
-import ReactTestUtils from 'react-dom/test-utils';
 import { mount, shallow, wrapper } from 'enzyme';
 import shallowToJSON from 'enzyme-to-json';
 import Sources from '../components/Sources.js';
@@ -22,4 +20,4 @@ describe('Sources components', () => {
         expect(y.refs.getDOMNode().textContent).toEqual(''); expect(y.refs.list).toBeUndefined();
     });
 
-}
+})
