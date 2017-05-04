@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component Should render a home page apperance 1`] = `
+<div
+  className="home"
+>
+  <div
+    className="headers"
+  >
+    <Header />
+  </div>
+  <div
+    className="content"
+  >
+    <Content />
+  </div>
+  <div
+    className="footer"
+  >
+    Footer
+  </div>
+</div>
+`;

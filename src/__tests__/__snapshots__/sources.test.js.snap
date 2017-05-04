@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sources Component snapshot for sources component 1`] = `
+<div>
+  <h1>
+    SOURCES
+  </h1>
+</div>
+`;
