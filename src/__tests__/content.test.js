@@ -1,11 +1,12 @@
+import React from 'react';
 import shallowToJSON from 'enzyme-to-json';
 import { mount, shallow, wrapper } from 'enzyme';
 import Content from '../components/Content.js';
 
 describe('Content component', () => {
     it('Should have all the contents information', () => {
-        const homes = shallow(<Home />);
-        const tree = shallowToJSON(homes);
+        const contents = shallow(<Content />);
+        const tree = shallowToJSON(contents);
         expect(tree).toMatchSnapshot();
     });
     it('should displays search and log in buttons', () => {
@@ -51,7 +52,7 @@ describe('Content component', () => {
             });
     }),
         describe('the articles header', () => {
-            it('Snapshot of Header Component', () => {
+            it('Snapshot of articles Header Component', () => {
                 const headers = shallow(<Header />);
                 const tree = shallowToJSON(headers);
                 expect(h3.getDOMNode().textContent).toEqual("Articles");
