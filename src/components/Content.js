@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom';
 import Sources from './Sources'
 
-export default class Content extends Component {
+export default class Content extends React.Component {
     render() {
         return (
             <div className="content">

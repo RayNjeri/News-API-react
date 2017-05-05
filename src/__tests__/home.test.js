@@ -4,7 +4,7 @@ import shallowToJSON from 'enzyme-to-json';
 import Home from '../components/Home';
 
 describe('Home Component', () => {
-    it('Should render a home page apperance', () => {
+    it('Should render a home page', () => {
         const homes = shallow(<Home />);
         const tree = shallowToJSON(homes);
         expect(tree).toMatchSnapshot();

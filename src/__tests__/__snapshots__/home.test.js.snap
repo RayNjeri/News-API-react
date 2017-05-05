@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Home Component Should render a home page apperance 1`] = `
+exports[`Home Component Should render a home page 1`] = `
 <div
   className="home"
 >
