@@ -8,29 +8,29 @@ let items = ['Country', 'Language', 'Category'];
 
 describe('Search source dropdown button', () => {
     it('renders an empty button initially', () => {
-        let y = TestUtils.renderIntoDocument(<Dropdown menuItems={items} />);
-        expect(y.refs.button.getDOMNode().textContent).toEqual(''); expect(y.refs.list).toBeUndefined();
+        let dropdown = TestUtils.renderIntoDocument(<Dropdown menuItems={items} />);
+        expect(dropdown.refs.button.getDOMNode().textContent).toEqual(''); expect(dropdown.refs.list).toBeUndefined();
     });
     it('renders a list of options on click', () => {
-        let y = TestUtils.renderIntoDocument(<Dropdown menuItems={items} />);
-        TestUtils.Simulate.click(y.refs.button.getDOMNode());
+        let dropdown = TestUtils.renderIntoDocument(<Dropdown menuItems={items} />);
+        TestUtils.Simulate.click(dropdown.refs.button.getDOMNode());
 
-        expect(y.refs.button.getDOMNode().className).toContain("active");
-        expect(y.refs.list.getDOMNode()).toBeDefined();
-        expect(TestUtils.scryRenderedDOMComponentsWithTag(y, "li").map(function (li) {
+        expect(dropdown.refs.button.getDOMNode().className).toContain("Country");
+        expect(dropdown.refs.list.getDOMNode()).toBeDefined();
+        expect(TestUtils.scryRenderedDOMComponentsWithTag(dropdown, "li").map(function (li) {
             return li.getDOMNode().textContent;
         })).toEqual(items);
     });
     it('updates the value when option is clicked', () => {
-        let y = TestUtils.renderIntoDocument(<Dropdown menuItems={items} />);
+        let dropdown = TestUtils.renderIntoDocument(<Dropdown menuItems={items} />);
 
         items.forEach(function (value, index) {
-            TestUtils.Simulate.click(y.refs.button.getDOMNode());
-            TestUtils.Simulate.click(TestUtils.scryRenderedDOMComponentsWithTag(y, 'country')[index].getDOMNode());
+            TestUtils.Simulate.click(dropdown.refs.button.getDOMNode());
+            TestUtils.Simulate.click(TestUtils.scryRenderedDOMComponentsWithTag(dropdown, 'country')[index].getDOMNode());
 
-            expect(y.refs.list).toBeUndefined();
-            expect(y.refs.button.getDOMNode().className).not.toContain("active");
-            expect(y.refs.button.getDOMNode().textContent).toEqual(value);
+            expect(dropdown.refs.list).toBeUndefined();
+            expect(dropdown.refs.button.getDOMNode().className).not.toContain("active");
+            expect(dropdown.refs.button.getDOMNode().textContent).toEqual(value);
         })
     });
 })

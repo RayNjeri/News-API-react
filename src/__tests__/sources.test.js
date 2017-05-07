@@ -17,7 +17,7 @@ describe('Sources components', () => {
     });
     it('renders a list of available news sources', () => {
         let y = TestUtils.renderIntoDocument(<this.state.sources.map />);
-        expect(y.refs.getDOMNode().textContent).toEqual(''); expect(y.refs.list).toBeUndefined();
+        expect(y.refs.getDOMNode().textContent).toEqual(''); expect(y.refs.list).toBeDefined();
     });
 
 })
