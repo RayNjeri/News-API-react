@@ -8,8 +8,8 @@ export default class Content extends React.Component {
             <div className="content">
                 <span className="sources"><Sources /></span>
                 <span>
-                    <div className="filter">filter </div>
-                    <div className="subContent">subContent</div>
+                    <div className="filter"><filter /> </div>
+                    <div className="subContent"><subContent /></div>
                 </span>
             </div>
         );

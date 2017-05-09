@@ -41,6 +41,7 @@
     "html-webpack-plugin": "^2.28.0",
     "jest": "^19.0.2",
     "react-addons-test-utils": "^15.5.1",
+    "react-routing": "0.0.7",
     "reactify": "^1.1.1",
     "regenerator-runtime": "^0.10.4",
     "ts-jest": "^19.0.14"
