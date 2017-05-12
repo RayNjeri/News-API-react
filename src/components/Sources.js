@@ -27,9 +27,10 @@ export default class Sources extends Component {
                 {this.state.sources.map((sources) => (
                     <div>
                         <div>{sources.name}</div>
-                        <div>{sources.description}</div>
+                        {/*<div>{sources.description}</div>*/}
                     </div>
-                ))}
+                ))
+                }
             </div >
         );
     }

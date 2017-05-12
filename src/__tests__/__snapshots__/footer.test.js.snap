@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home Component Should render a footer items 1`] = `
+<div>
+  <BrowserRouter>
+    <ul>
+      <li>
+        <Link
+          replace={false}
+          to="/About Us"
+        >
+          About Us
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/Terms & Conditions"
+        >
+          Terms & Conditions
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/Help"
+        >
+          Help
+        </Link>
+      </li>
+      <li>
+        <Link
+          replace={false}
+          to="/Contact Us"
+        >
+          Contact Us
+        </Link>
+      </li>
+    </ul>
+  </BrowserRouter>
+</div>
+`;

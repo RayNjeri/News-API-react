@@ -4,6 +4,7 @@ exports[`Home Component Should render a home page 1`] = `
 <div
   className="home"
 >
+  <Login />
   <div
     className="headers"
   >
@@ -14,10 +15,6 @@ exports[`Home Component Should render a home page 1`] = `
   >
     <Content />
   </div>
-  <div
-    className="footer"
-  >
-    Footer
-  </div>
+  <Footer />
 </div>
 `;
