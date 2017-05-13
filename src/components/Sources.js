@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ReactTestUtils from 'react-dom/test-utils';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 import Axios from 'axios';
 
 export default class Sources extends Component {
@@ -8,7 +10,7 @@ export default class Sources extends Component {
         super(props);
         this.state = {
             sources: [],
-        }
+        };
     }
 
     componentDidMount() {
@@ -18,7 +20,7 @@ export default class Sources extends Component {
                 this.setState({
                     sources: result.data.sources
                 });
-            })
+            });
     }
     render() {
         return (
@@ -26,8 +28,9 @@ export default class Sources extends Component {
                 <h2>SOURCES</h2>
                 {this.state.sources.map((sources) => (
                     <div>
-                        <div>{sources.name}</div>
-                        {/*<div>{sources.description}</div>*/}
+                        <Router>
+                            <Link to={`/sources/${sources.id}`} activeClassName="current">{sources.name}</Link>
+                        </Router>
                     </div>
                 ))
                 }
