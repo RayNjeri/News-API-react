@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import ReactTestUtils from 'react-dom/test-utils';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
 import Axios from 'axios';
 
 export default class Articles extends Component {
@@ -8,7 +10,7 @@ export default class Articles extends Component {
         super(props);
         this.state = {
             articles: [],
-        }
+        };
     }
 
     componentDidMount() {
@@ -18,7 +20,7 @@ export default class Articles extends Component {
                 this.setState({
                     articles: result.data.articles
                 });
-            })
+            });
     }
     render() {
         return (
@@ -26,7 +28,11 @@ export default class Articles extends Component {
                 <h3>Articles</h3>
                 {this.state.articles.map((articles) => (
                     <div>
-                        <div key={articles.title}>{articles.title}</div>
+                        {/*<Router>*/}
+                        {/*<Link to={`/articles/${articles.url}`} activeClassName="current">{articles.title}</Link>*/}
+                        {/*<div key={articles.title}>{articles.title}</div>*/}
+                        {/*</Router>*/}
+                        <a href={articles.url}>{articles.title}</a>
                     </div>
                 ))
                 }
