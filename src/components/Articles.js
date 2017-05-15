@@ -28,7 +28,7 @@ export default class Articles extends Component {
                 <h3>Articles</h3>
                 {this.state.articles.map((articles) => (
                     <div>
-                        <a href={articles.url}>{articles.title}</a>
+                        <a href={articles.url} target="_blank">{articles.title}</a>
                     </div>
                 ))
                 }
