@@ -29,10 +29,7 @@ export default class Sources extends Component {
                 <h2>SOURCES</h2>
                 {this.state.sources.map((sources) => (
                     <div>
-                        {/*<Router>
-                            <Link to="/Headline" target="_blank">{sources.name}</Link>
-                        </Router>*/}
-                        <a href={sources.url}>{sources.name}</a>
+                        <a href={sources.url} target="_blank">{sources.name}</a>
                     </div>
                 ))
                 }

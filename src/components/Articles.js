@@ -28,10 +28,6 @@ export default class Articles extends Component {
                 <h3>Articles</h3>
                 {this.state.articles.map((articles) => (
                     <div>
-                        {/*<Router>*/}
-                        {/*<Link to={`/articles/${articles.url}`} activeClassName="current">{articles.title}</Link>*/}
-                        {/*<div key={articles.title}>{articles.title}</div>*/}
-                        {/*</Router>*/}
                         <a href={articles.url}>{articles.title}</a>
                     </div>
                 ))
