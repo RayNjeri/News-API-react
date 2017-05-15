@@ -15,7 +15,7 @@ export default class Sources extends Component {
     }
 
     componentDidMount() {
-        Axios.get('https://newsapi.org/v1/sources?language=en')
+        Axios.get('https://newsapi.org/v1/sources')
             .then((result) => {
                 console.log('getting result: ', result);
                 this.setState({
@@ -29,7 +29,8 @@ export default class Sources extends Component {
                 <h2>SOURCES</h2>
                 {this.state.sources.map((sources) => (
                     <div>
-                        <a href={sources.url} target="_blank">{sources.name}</a>
+                        {/*<img src={sources.urlToLogo}></img>*/}
+                        <a href={sources.url}>{sources.name}</a>
                     </div>
                 ))
                 }
