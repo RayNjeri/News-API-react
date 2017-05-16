@@ -108,6 +108,7 @@ export default class Sources extends Component {
                     ))}
                 </select>
                 <div className="col-md-2">
+                    <h2>SOURCES</h2>
                     {sourcesToDisplay.map(source => (
                         <div className="card col-xs-12 col-sm-6 col-md-12 m-2" key={source.id}>
                             <div className="card-block">
