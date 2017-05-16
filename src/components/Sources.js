@@ -111,7 +111,7 @@ export default class Sources extends Component {
                     {sourcesToDisplay.map(source => (
                         <div className="card col-xs-12 col-sm-6 col-md-12 m-2" key={source.id}>
                             <div className="card-block">
-                                <h4 className="card-title">{source.name}</h4>
+                                <h4 className="card-title"><a href={source.url} target="_blank">{source.name}</a></h4>
                             </div>
                         </div>
                     ))}
@@ -121,6 +121,6 @@ export default class Sources extends Component {
     }
 }
 
-
+{/*<a href={sources.url}>{sources.name}</a>*/ }
 
 
