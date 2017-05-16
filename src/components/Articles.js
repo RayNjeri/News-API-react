@@ -23,12 +23,14 @@ export default class Articles extends Component {
     }
     render() {
         return (
-            < div >
+            < div className="col-md-10">
                 <h3>Articles</h3>
                 {this.state.articles.map((articles) => (
-                    <div>
-                        <img src={articles.urlToImage} />
-                        <a href={articles.url} target="_blank">{articles.title}</a>
+                    <div className="card col-xs-12 col-sm-6 col-md-2 m-5">
+                        <div>
+                            <img src={articles.urlToImage} style={{ width: '100%' }} />
+                            <a href={articles.url} target="_blank">{articles.title}</a>
+                        </div>
                     </div>
                 ))
                 }

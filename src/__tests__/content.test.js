@@ -15,7 +15,7 @@ describe('Content component', () => {
     });
     it('should display search text in the button', () => {
         const text = 'SEARCH';
-        const renderedComponent = shallow(<Button>{'SEARCH'}</Button>)
+        const renderedComponent = shallow(<Button>{'SEARCH'}</Button>);
         expect(renderedComponent.contains(text)).toEqual(true);
     });
     it('handles click', () => {
@@ -30,7 +30,7 @@ describe('Content component', () => {
     });
     it('should display log in text in the button', () => {
         const text = 'LOG IN';
-        const renderedComponent = shallow(<Button>{'LOG IN'}</Button>)
+        const renderedComponent = shallow(<Button>{'LOG IN'}</Button>);
         expect(renderedComponent.contains(text)).toEqual(true);
     });
     it('handles click', () => {
@@ -58,11 +58,11 @@ describe('Content component', () => {
             it('updates the value when option is clicked', () => {
                 items.forEach(function (value, index) {
                     TestUtils.Simulate.click(search.refs.button.getDOMNode());
-                    TestUtils.Simulate.click(TestUtils.scryRenderedDOMComponentsWithTag(search, 'top')[index].getDOMNode())
+                    TestUtils.Simulate.click(TestUtils.scryRenderedDOMComponentsWithTag(search, 'top')[index].getDOMNode());
                     expect(search.refs.list).toBeUndefined();
                     expect(search.refs.button.getDOMNode().className).not.toContain("trending");
                     expect(search.refs.button.getDOMNode().textContent).toEqual(value);
-                })
+                });
             });
     }),
         describe('the articles header', () => {
@@ -71,6 +71,6 @@ describe('Content component', () => {
                 const tree = shallowToJSON(headers);
                 expect(h3.getDOMNode().textContent).toEqual("Articles");
                 expect(tree).toMatchSnapshot();
-            })
-        })
-})    
+            });
+        });
+});    

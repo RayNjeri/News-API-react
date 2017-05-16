@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
-    "travis": "test",
-    "build": "npm run test-server"
+    "travis": "test"
   },
   "repository": {
     "type": "git",
