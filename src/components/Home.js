@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Router, Route, Link, IndexRoute, hashHistory, browserHistory } from 'react-router';
 import ReactDOM from 'react-dom';
 import Header from './Header';
 import Content from './Content';
@@ -10,8 +11,8 @@ export default class Home extends Component {
     render() {
         return (
             <div className="home">
-                <Login />
                 <div className="headers"><Header /></div>
+                <div className="headers"><Login /></div>
                 <div className="content"><Content /></div>
                 <Footer />
             </div >

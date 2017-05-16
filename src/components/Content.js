@@ -4,15 +4,14 @@ import Sources from './Sources';
 import Articles from './Articles';
 import Filter from './Sourcefilter';
 
-
 export default class Content extends React.Component {
     render() {
         return (
             <div className="content">
                 <span>
                     <span className="filter"><Filter /> </span>
-                    <span className="sources"><Sources /></span>
-                    <span className="sidenav"><Articles /></span>
+                    <span className="sidenav"><Sources /></span>
+                    <span className="subcontent"><Articles /></span>
                 </span>
             </div>
         );

@@ -4,33 +4,23 @@ import shallowToJSON from 'enzyme-to-json';
 import ReactTestUtils from 'react-addons-test-utils';
 import Sourcesearch from '../components/Sourcesearch.js';
 
-let items = ['Country', 'Language', 'Category'];
 
-describe('Search source dropdown button', () => {
-    it('renders an empty button initially', () => {
-        let dropdown = TestUtils.renderIntoDocument(<Dropdown menuItems={items} />);
-        expect(dropdown.refs.button.getDOMNode().textContent).toEqual(''); expect(dropdown.refs.list).toBeUndefined();
+describe('Search source button', () => {
+    it('should displays search button', () => {
+        const renderedComponent = shallow(<Button></Button>);
+        expect(renderedComponent.find("button").node).toBeDefined();
     });
-    it('renders a list of options on click', () => {
-        let dropdown = TestUtils.renderIntoDocument(<Dropdown menuItems={items} />);
-        TestUtils.Simulate.click(dropdown.refs.button.getDOMNode());
 
-        expect(dropdown.refs.button.getDOMNode().className).toContain("Country");
-        expect(dropdown.refs.list.getDOMNode()).toBeDefined();
-        expect(TestUtils.scryRenderedDOMComponentsWithTag(dropdown, "li").map(function (li) {
-            return li.getDOMNode().textContent;
-        })).toEqual(items);
+    it('should display search text in the button', () => {
+        const text = 'SEARCH';
+        const renderedComponent = shallow(<Button>{'SEARCH'}</Button>);
+        expect(renderedComponent.contains(text)).toEqual(true);
     });
-    it('updates the value when option is clicked', () => {
-        let dropdown = TestUtils.renderIntoDocument(<Dropdown menuItems={items} />);
 
-        items.forEach(function (value, index) {
-            TestUtils.Simulate.click(dropdown.refs.button.getDOMNode());
-            TestUtils.Simulate.click(TestUtils.scryRenderedDOMComponentsWithTag(dropdown, 'country')[index].getDOMNode());
-
-            expect(dropdown.refs.list).toBeUndefined();
-            expect(dropdown.refs.button.getDOMNode().className).not.toContain("active");
-            expect(dropdown.refs.button.getDOMNode().textContent).toEqual(value);
-        })
+    it('handles click', () => {
+        const onClickSpy = jest.fn();
+        const renderedComponent = shallow(<Button onClick={onClickSpy} />);
+        renderedComponent.find('button').simulate('click');
+        expect(onClickSpy).toHaveBeenCalled();
     });
-})
+});

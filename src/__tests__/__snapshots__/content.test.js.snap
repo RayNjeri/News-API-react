@@ -12,12 +12,18 @@ exports[`Content component Should have all the contents information 1`] = `
        
     </span>
     <span
-      className="sources"
+      className="filter"
+    >
+      <Sourcebutton />
+       
+    </span>
+    <span
+      className="sidenav"
     >
       <Sources />
     </span>
     <span
-      className="sidenav"
+      className="subcontent"
     >
       <Articles />
     </span>

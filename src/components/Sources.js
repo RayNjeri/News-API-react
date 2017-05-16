@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import ReactTestUtils from 'react-dom/test-utils';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Headline from './Headline';
 
 import Axios from 'axios';
 
@@ -29,7 +27,6 @@ export default class Sources extends Component {
                 <h2>SOURCES</h2>
                 {this.state.sources.map((sources) => (
                     <div>
-                        {/*<img src={sources.urlToLogo}></img>*/}
                         <a href={sources.url}>{sources.name}</a>
                     </div>
                 ))

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import ReactTestUtils from 'react-dom/test-utils';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 import Axios from 'axios';
@@ -28,6 +27,7 @@ export default class Articles extends Component {
                 <h3>Articles</h3>
                 {this.state.articles.map((articles) => (
                     <div>
+                        <img src={articles.urlToImage} />
                         <a href={articles.url} target="_blank">{articles.title}</a>
                     </div>
                 ))
