@@ -1,9 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Sources components snapshot for sources component 1`] = `
-<div>
-  <h2>
-    SOURCES
-  </h2>
+exports[`Sources components snapshot for  Sources component 1`] = `
+<div
+  className="container"
+>
+  <select
+    className="form-control c-select mb-2"
+    defaultValue="language"
+    name="filterKey"
+    onChange={[Function]}
+    style={
+      Object {
+        "width": "20%",
+      }
+    }
+  >
+    <option
+      value="country"
+    >
+      country
+    </option>
+    <option
+      value="language"
+    >
+      language
+    </option>
+    <option
+      value="category"
+    >
+      category
+    </option>
+  </select>
+  <select
+    className="form-control c-select"
+    defaultValue="en"
+    name="filterValue"
+    onChange={[Function]}
+    style={
+      Object {
+        "width": "20%",
+      }
+    }
+  >
+    <option
+      value="en"
+    >
+      en
+    </option>
+    <option
+      value="de"
+    >
+      de
+    </option>
+    <option
+      value="fr"
+    >
+      fr
+    </option>
+  </select>
+  <div
+    className="col-md-2"
+  >
+    <h2>
+      SOURCES
+    </h2>
+  </div>
 </div>
 `;

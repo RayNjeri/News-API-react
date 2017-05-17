@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Login Component Snapshot of Login Component 1`] = `
+<div>
+  <GoogleLogin
+    buttonText="Login With Google"
+    class="google-login"
+    responseHandler={[Function]}
+    scope="profile"
+    socialId="300991801998-8s16am8jt76ou8pge5iisdih6dokqss5"
+  />
+</div>
+`;

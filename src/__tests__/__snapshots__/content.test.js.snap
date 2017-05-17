@@ -4,29 +4,19 @@ exports[`Content component Should have all the contents information 1`] = `
 <div
   className="content"
 >
-  <span>
-    <span
-      className="filter"
-    >
-      <Filter />
-       
-    </span>
-    <span
-      className="filter"
-    >
-      <Sourcebutton />
-       
-    </span>
-    <span
+  <div
+    className="row"
+  >
+    <div
       className="sidenav"
     >
       <Sources />
-    </span>
-    <span
+    </div>
+    <div
       className="subcontent"
     >
       <Articles />
-    </span>
-  </span>
+    </div>
+  </div>
 </div>
 `;

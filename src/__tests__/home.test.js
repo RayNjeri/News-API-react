@@ -8,7 +8,7 @@ describe('Home Component', () => {
         const homes = shallow(<Home />);
         const tree = shallowToJSON(homes);
         expect(tree).toMatchSnapshot();
-    })
+    });
     it('should render header div class', () => {
         const header = shallow(<Home />);
         expect(header.find('Header')).toEqual.defined;

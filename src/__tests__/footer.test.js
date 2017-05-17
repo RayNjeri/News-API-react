@@ -8,5 +8,5 @@ describe('Home Component', () => {
         const footer = shallow(<Footer />);
         const tree = shallowToJSON(footer);
         expect(tree).toMatchSnapshot();
-    })
-})
+    });
+});
