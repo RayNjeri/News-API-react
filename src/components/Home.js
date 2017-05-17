@@ -12,7 +12,7 @@ export default class Home extends Component {
         return (
             <div className="home">
                 <div className="headers"><Header /></div>
-                <div className="headers"><Login /></div>
+                <div className="login"><Login /></div>
                 <div className="content"><Content /></div>
                 <Footer />
             </div >

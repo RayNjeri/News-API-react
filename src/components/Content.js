@@ -9,8 +9,8 @@ export default class Content extends React.Component {
         return (
             <div className="content">
                 <div className="row">
-                    <div className="sidenav"><Sources /></div>
-                    <div className="subcontent"><Articles /></div>
+                    <div className="col-sm-4" ><Sources /></div>
+                    <div className="col-sm-8"><Articles /></div>
                 </div>
             </div >
         );
