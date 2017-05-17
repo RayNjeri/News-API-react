@@ -122,6 +122,5 @@ export default class Sources extends Component {
     }
 }
 
-{/*<a href={sources.url}>{sources.name}</a>*/ }
 
 
