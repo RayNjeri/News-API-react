@@ -21,13 +21,13 @@ export default class Articles extends React.Component {
 
   render() {
     return (
-      < div className="col-md-10">
+      < div className="col-md-12">
         <h3>Articles</h3>
         {this.state.articles.map((articles, index) => (
-          <div className="card col-xs-14 col-sm-10 col-md-8 m-14" key={index}>
-            <div>
-              <img src={articles.urlToImage} style={{ width: '100%' }} />
-              <a href={articles.url} target="_blank">{articles.title}</a>
+          <div className="card col-xs-12 col-sm-6 col-md-4 m-2" key={index}>
+            <div className="card-block">
+              <img className="card-title" src={articles.urlToImage} style={{ width: '200', height: '200' }} />
+              <a className="card-text" href={articles.url} target="_blank">{articles.title}</a>
             </div>
           </div>
         ))

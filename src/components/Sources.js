@@ -84,7 +84,7 @@ export default class Sources extends React.Component {
         <select
           className="form-control c-select mb-2"
           name="filterKey"
-          style={{ width: '20%' }}
+          style={{ width: '10%' }}
           onChange={this.handleFilterChange}
           defaultValue={filterKey}
         >
@@ -97,7 +97,7 @@ export default class Sources extends React.Component {
         <select
           className="form-control c-select"
           name="filterValue"
-          style={{ width: '20%' }}
+          style={{ width: '10%' }}
           onChange={this.handleFilterChange}
           defaultValue={filterValue}
         >
