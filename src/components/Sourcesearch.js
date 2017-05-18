@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
-import SearchInput, { createFilter } from 'react-search-input';
+import ReactDOM from 'react-dom';
 import Sources from './Sources';
-
+import SearchInput, { createFilter } from 'react-search-input';
 
 const KEY_TO_FILTERS = ['sources.name'];
 
 export default class Search extends Component {
-    getInitialState() {
-        return { searchTerm: '' };
+    constructor() {
+        super();
+        this.state = {
+            sources: [],
+            searchTerm: ''
+        };
+    }
+    searchUpdated(term) {
+        this.setState({ searchTerm: term });
     }
     render() {
         const filteredSources = sources.filter(createFilter(this.state.searchTerm, KEY_TO_FILTERS));
@@ -22,8 +29,5 @@ export default class Search extends Component {
             </div>
         );
     }
-    searchUpdated(term) {
-        this.setState({ searchTerm: term });
-    }
-}
 
+}
