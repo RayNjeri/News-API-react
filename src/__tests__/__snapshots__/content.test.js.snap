@@ -8,12 +8,17 @@ exports[`Content component Should have all the contents information 1`] = `
     className="row"
   >
     <div
-      className="sidenav"
+      className="col-sm-4"
     >
       <Sources />
     </div>
     <div
-      className="subcontent"
+      className="Search"
+    >
+      <Search />
+    </div>
+    <div
+      className="col-sm-8"
     >
       <Articles />
     </div>

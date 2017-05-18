@@ -4,9 +4,9 @@ import shallowToJSON from 'enzyme-to-json';
 import Footer from '../components/Footer';
 
 describe('Home Component', () => {
-    it('Should render a footer items', () => {
-        const footer = shallow(<Footer />);
-        const tree = shallowToJSON(footer);
-        expect(tree).toMatchSnapshot();
-    });
+  it('Should render a footer items', () => {
+    const footer = shallow(<Footer />);
+    const tree = shallowToJSON(footer);
+    expect(tree).toMatchSnapshot();
+  });
 });

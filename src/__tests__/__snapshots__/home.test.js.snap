@@ -10,7 +10,7 @@ exports[`Home Component Should render a home page 1`] = `
     <Header />
   </div>
   <div
-    className="headers"
+    className="login"
   >
     <Login />
   </div>

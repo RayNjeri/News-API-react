@@ -59,7 +59,7 @@ exports[`Sources components snapshot for  Sources component 1`] = `
     </option>
   </select>
   <div
-    className="col-md-2"
+    className="col-md-10"
   >
     <h2>
       SOURCES
