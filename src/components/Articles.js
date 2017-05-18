@@ -25,8 +25,8 @@ export default class Articles extends Component {
         return (
             < div className="col-md-10">
                 <h3>Articles</h3>
-                {this.state.articles.map((articles) => (
-                    <div className="card col-xs-14 col-sm-10 col-md-8 m-14">
+                {this.state.articles.map((articles, index) => (
+                    <div className="card col-xs-14 col-sm-10 col-md-8 m-14" key={index}>
                         <div>
                             <img src={articles.urlToImage} style={{ width: '100%' }} />
                             <a href={articles.url} target="_blank">{articles.title}</a>
