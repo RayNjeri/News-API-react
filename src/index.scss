@@ -25,17 +25,24 @@ body{
     font-size: 20px,
 }
 
-.footer{
-    padding: 5px;
-    margin-left: 35px;
-    display: inline{
-        display: flex;
-   flex-direction: row;
-   white-space: nowrap
-    }
+.footer > ul > li {
+    float:left;
+    margin-right:100px;
+}
+
+div.footer {
+    border: 1px solid #bdbdbd;
+    padding:20px;
+    margin:0px;
 }
 .searchbox{
     margin-top: 20px;
     width:150px;
 }
+// .articles{
+//     width: 60px;
+//     height: 20px;
+//     padding:20px;
+//     column-rule-width: 20px;
+// }
 

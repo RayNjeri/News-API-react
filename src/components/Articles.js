@@ -21,7 +21,7 @@ export default class Articles extends React.Component {
 
   render() {
     return (
-      < div className="col-md-12">
+      < div className="articles">
         <h3>Articles</h3>
         {this.state.articles.map((articles, index) => (
           <div className="card col-xs-12 col-sm-6 col-md-4 m-2" key={index}>

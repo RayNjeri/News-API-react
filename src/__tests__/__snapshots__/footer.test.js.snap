@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Home Component Should render a footer items 1`] = `
-<div>
+<div
+  className="footer"
+>
   <BrowserRouter>
     <ul>
       <li>

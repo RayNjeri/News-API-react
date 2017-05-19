@@ -5,16 +5,6 @@ exports[`Home Component Should render a home page 1`] = `
   className="home"
 >
   <div
-    className="headers"
-  >
-    <Header />
-  </div>
-  <div
-    className="login"
-  >
-    <Login />
-  </div>
-  <div
     className="content"
   >
     <Content />

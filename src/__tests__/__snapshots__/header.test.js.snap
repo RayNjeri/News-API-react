@@ -1,9 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`Header Component Snapshot of Header Component 1`] = `
-<div>
-  <h1>
-    THE NEWS HUB.
-  </h1>
-</div>
-`;

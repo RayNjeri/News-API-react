@@ -11,7 +11,7 @@ exports[`Sources components snapshot for  Sources component 1`] = `
     onChange={[Function]}
     style={
       Object {
-        "width": "20%",
+        "width": "10%",
       }
     }
   >
@@ -38,7 +38,7 @@ exports[`Sources components snapshot for  Sources component 1`] = `
     onChange={[Function]}
     style={
       Object {
-        "width": "20%",
+        "width": "10%",
       }
     }
   >

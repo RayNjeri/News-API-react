@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Search component Should have a search button 1`] = `
+<div
+  className="col-md-2"
+  id="serch"
+>
+  <input
+    className="searchbox"
+    onChange={[Function]}
+    placeholder="Source Name"
+    style={
+      Object {
+        "backgroundColor": "#d9d9d9",
+      }
+    }
+    type="text"
+    value=""
+  />
+</div>
+`;
