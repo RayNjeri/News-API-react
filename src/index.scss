@@ -2,35 +2,37 @@ $font-stack: Helvetica, sans-serif, Robot;
 $primary-color:purple;
 
 h1{
-    font-family: Roboto;
+    font-family: Georgia;
     color:$primary-color;
     text-align: center;
     font-size: 50px;
     border: 1px solid black
 }
+h3{
+    text-align: center;
+    font-size: 50px;
+}
 
 body{
     font-family:Roboto;
     color:$primary-color;
-    background-color:whitesmoke;
+    background-color:beige;
     border: 1px solid black
 
 }
 
 .content {
     font-size: 20px,
-   
 }
 
-.Search{
-   height: 35px;
-   padding: 10px 15px;
-   color: #a4a4a4;   /* change  color of text to be typed inside search box */
-   font-size: 13px;
-   background-color: transparent;
-   border-radius: 0!important;
-   -webkit-box-shadow: none;
-   box-shadow: none;
+.footer{
+    padding: 5px;
+    margin-left: 35px;
+    display: inline{
+        display: flex;
+   flex-direction: row;
+   white-space: nowrap
+    }
 }
 .searchbox{
     margin-top: 20px;

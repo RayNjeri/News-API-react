@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 export default class Footer extends React.Component {
   render() {
     return (
-      <div>
+      <div className="footer">
         <Router>
           <ul>
             <li><Link to="/About Us">About Us</Link></li>
