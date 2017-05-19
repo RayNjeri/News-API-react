@@ -40,7 +40,7 @@ export default class Sources extends React.Component {
       filters: FILTERS
     };
     this.handleFilterChange = this.handleFilterChange.bind(this);
-  }
+  };
 
   componentDidMount() {
     Axios
@@ -50,7 +50,7 @@ export default class Sources extends React.Component {
           sources: data
         }));
       });
-  }
+  };
 
   handleFilterChange(event) {
     const { name, value } = event.target;
@@ -109,13 +109,17 @@ export default class Sources extends React.Component {
         </select>
         <div className="col-md-10">
           <h2>SOURCES</h2>
-          {sourcesToDisplay.map(source => (
-            <div className="card col-xs-12 col-sm-6 col-md-12 m-2" key={source.id}>
-              <div className="card-block">
-                <h4 className="card-title"><a href={source.url} target="_blank">{source.name}</a></h4>
+          {sourcesToDisplay.map((source => {
+            const url = "#/" + source.id + "/" + source.sortBysAvailable[0];
+            return (
+              <div className="card col-xs-12 col-sm-6 col-md-12 m-2" key={source.id}>
+                <div className="card-block">
+                  <h4 className="card-title"><a href={url}>{source.name}</a></h4>
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          }))
+          }
         </div>
       </div >
     );

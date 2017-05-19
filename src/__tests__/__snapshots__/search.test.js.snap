@@ -3,7 +3,7 @@
 exports[`Search component Should have a search button 1`] = `
 <div
   className="col-md-2"
-  id="serch"
+  id="search"
 >
   <input
     className="searchbox"

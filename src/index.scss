@@ -3,7 +3,7 @@ $primary-color:purple;
 
 h1{
     font-family: Georgia;
-    color:$primary-color;
+    color: black;
     text-align: center;
     font-size: 50px;
     border: 1px solid black
@@ -13,12 +13,21 @@ h3{
     font-size: 50px;
 }
 
+a {
+    color: black
+}
+.container {
+    padding-right: 1px;
+    padding-left: 1px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 body{
     font-family:Roboto;
-    color:$primary-color;
-    background-color:beige;
+    color: black;
+    background-color: whitesmoke;
     border: 1px solid black
-
 }
 
 .content {
@@ -39,6 +48,7 @@ div.footer {
     margin-top: 20px;
     width:150px;
 }
+
 // .articles{
 //     width: 60px;
 //     height: 20px;

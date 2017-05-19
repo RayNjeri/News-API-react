@@ -8,9 +8,9 @@ export default class Content extends React.Component {
         return (
             <div className="content">
                 <div className="row">
-                    <div className="col-md-2" ><Sources /></div>
-                    <div className="col-md-8"><Articles /></div>
-                    <div className="col-md-2"><Search /></div>
+                    <div className="col-lg-2" ><Sources /></div>
+                    {this.props.children}
+                    <div className="col-lg-2"><Search /></div>
                 </div>
             </div >
         );

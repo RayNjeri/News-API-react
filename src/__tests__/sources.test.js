@@ -7,12 +7,12 @@ import Sources from '../components/Sources';
 let items = ['country', 'language', 'category'];
 
 describe('Sources components', () => {
-  beforeEach, () => {
-    this.exampleSources = [
-      { id: 1, name: "ABC News(AU)" },
-      { id: 2, name: "Al Jazeera English" }
-    ];
-  };
+  // beforeEach, () => {
+  //   this.exampleSources = [
+  //     { id: 1, name: "ABC News(AU)" },
+  //     { id: 2, name: "Al Jazeera English" }
+  //   ];
+  // };
   it('snapshot for  Sources component', () => {
     const component = shallow(<Sources data={[]} />);
     const tree = shallowToJSON(component);

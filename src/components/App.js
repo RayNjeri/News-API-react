@@ -1,4 +1,4 @@
-import React from 'react';
+/*import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import AuthService from 'utils/AuthService';
 
@@ -17,13 +17,13 @@ const requireAuth = (nextState, replace) => {
 
 export const makeMainRoutes = () => {
   return (
-    <Route path="/" component={Container} auth={auth}>
-      <IndexRedirect to="/home" />
-      <Route path="home" component={Home} onEnter={requireAuth} />
-      <Route path="login" component={Login} />
+    <Router history={hashHistory}>
+      <Route path="/" component={Home}>
+      <Route path="/:sourceId/:sortBy" component={Articles} />
     </Route>
+    </Router>
   );
 };
 
 export default makeMainRoutes;
-
+*/

@@ -7,7 +7,7 @@ export default class SourcesSearch extends React.Component {
     super();
     this.state = {
       sources: [],
-      search: ''
+      search: 'Search'
     };
   }
   updateSearch(event) {
@@ -32,7 +32,7 @@ export default class SourcesSearch extends React.Component {
       });
 
     return (
-      <div className="col-md-2" id="serch">
+      <div className="col-md-2" id="search">
 
         <input type="text" placeholder='Source Name' value={this.state.search} onChange={this.updateSearch.bind(this)} style={{ backgroundColor: '#d9d9d9' }} className="searchbox" />
 

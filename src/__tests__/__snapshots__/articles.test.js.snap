@@ -2,7 +2,7 @@
 
 exports[`Articles Component Snapshot of Articles Component 1`] = `
 <div
-  className="col-md-10"
+  className="articles"
 >
   <h3>
     Articles
