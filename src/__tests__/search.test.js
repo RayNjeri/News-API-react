@@ -10,6 +10,18 @@ describe('Search component', () => {
         const tree = shallowToJSON(search);
         expect(tree).toMatchSnapshot();
     });
+
+    it('should display search button', () => {
+        const renderedComponent = shallow(<searchbox />);
+        expect(renderedComponent.find("search").node).toBeDefined();
+    });
+
+    it('should display search text in the button', () => {
+        const text = 'Search';
+        const renderedComponent = shallow(<div>{'Search'}</div>);
+        expect(renderedComponent.contains(text)).toBe(true);
+    });
+
     it("trigger onSearch correctly", () => {
         const handleSearch = jest.fn();
     });

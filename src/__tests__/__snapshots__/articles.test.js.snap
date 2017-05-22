@@ -2,10 +2,13 @@
 
 exports[`Articles Component Snapshot of Articles Component 1`] = `
 <div
-  className="articles"
+  className="articles col-lg-8"
 >
   <h3>
     Articles
   </h3>
+  <div
+    className="row"
+  />
 </div>
 `;
