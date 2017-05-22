@@ -30,7 +30,8 @@ export default class Sources extends React.Component {
     super(props);
     this.state = {
       sources: {
-        sources: []
+        sources: [],
+        currentsource: "aljazeera"
       },
       articles: [],
       currentFilter: {
