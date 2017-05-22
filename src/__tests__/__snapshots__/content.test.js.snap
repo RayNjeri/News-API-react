@@ -8,17 +8,12 @@ exports[`Content component Should have all the contents information 1`] = `
     className="row"
   >
     <div
-      className="col-md-2"
+      className="col-lg-2"
     >
       <Sources />
     </div>
     <div
-      className="col-md-8"
-    >
-      <Articles />
-    </div>
-    <div
-      className="col-md-2"
+      className="col-lg-2"
     >
       <SourcesSearch />
     </div>

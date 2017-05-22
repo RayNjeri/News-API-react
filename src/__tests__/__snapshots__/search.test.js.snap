@@ -15,7 +15,7 @@ exports[`Search component Should have a search button 1`] = `
       }
     }
     type="text"
-    value=""
+    value="Search"
   />
 </div>
 `;

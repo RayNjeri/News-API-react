@@ -1,8 +1,8 @@
-$font-stack: Helvetica, sans-serif, Robot;
+$font-stack: cursive;
 $primary-color:purple;
 
 h1{
-    font-family: Georgia;
+    font-family:$font-stack;
     color: black;
     text-align: center;
     font-size: 50px;
@@ -24,7 +24,7 @@ a {
 }
 
 body{
-    font-family:Roboto;
+    font-family:$font-stack;
     color: black;
     background-color: whitesmoke;
     border: 1px solid black
@@ -48,11 +48,4 @@ div.footer {
     margin-top: 20px;
     width:150px;
 }
-
-// .articles{
-//     width: 60px;
-//     height: 20px;
-//     padding:20px;
-//     column-rule-width: 20px;
-// }
 
