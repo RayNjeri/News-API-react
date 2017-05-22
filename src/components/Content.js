@@ -6,40 +6,40 @@ import Search from './Sourcesearch';
 import Articlesrender from './Articlesrender';
 
 export default class Content extends React.Component {
-    constructor() {
-        super();
-        this.state = {
-            articles: [],
-        };
-    }
-
-    renderArticles() {
-        let url = `https://newsapi.org/v1/articles?source=abc-news-au&apiKey=3e94e65c70b047a3971837eb342fff8b`;
-        Axios.get(url)
-            .then((result) => {
-                this.setState({
-                    articles: result.data.articles
-                });
-            });
-
-    }
-    componentDidMount() {
-        this.renderArticles();
+  constructor() {
+    super();
+    this.state = {
+      articles: [],
     };
-    render() {
-        return (
-            <div className="content">
-                <div className="row">
-                    <div className="col-lg-2" ><Sources /></div>
-                    {this.props.children ?
-                        this.props.children
-                        :
-                        <Articlesrender articles={this.state.articles} />
-                    }
-                    <div className="col-lg-2"><Search /></div>
-                </div>
-            </div >
-        );
-    }
+  }
+
+  renderArticles() {
+    let url = `https://newsapi.org/v1/articles?source=abc-news-au&apiKey=3e94e65c70b047a3971837eb342fff8b`;
+    Axios.get(url)
+      .then((result) => {
+        this.setState({
+          articles: result.data.articles
+        });
+      });
+
+  }
+  componentDidMount() {
+    this.renderArticles();
+  };
+  render() {
+    return (
+      <div className="content">
+        <div className="row">
+          <div className="col-lg-2" ><Sources /></div>
+          {this.props.children ?
+            this.props.children
+            :
+            <Articlesrender articles={this.state.articles} />
+          }
+          <div className="col-lg-2"><Search /></div>
+        </div>
+      </div >
+    );
+  }
 }
 
