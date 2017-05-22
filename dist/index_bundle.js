@@ -18389,7 +18389,7 @@ exports = module.exports = __webpack_require__(162)(undefined);
 
 
 // module
-exports.push([module.i, "h1 {\n  font-family: Georgia;\n  color: black;\n  text-align: center;\n  font-size: 50px;\n  border: 1px solid black; }\n\nh3 {\n  text-align: center;\n  font-size: 50px; }\n\na {\n  color: black; }\n\n.container {\n  padding-right: 1px;\n  padding-left: 1px;\n  margin-right: auto;\n  margin-left: auto; }\n\nbody {\n  font-family: Roboto;\n  color: black;\n  background-color: whitesmoke;\n  border: 1px solid black; }\n\n.content {\n  font-size: 20px; }\n\n.footer > ul > li {\n  float: left;\n  margin-right: 100px; }\n\ndiv.footer {\n  border: 1px solid #bdbdbd;\n  padding: 20px;\n  margin: 0px; }\n\n.searchbox {\n  margin-top: 20px;\n  width: 150px; }\n", ""]);
+exports.push([module.i, "h1 {\n  font-family: cursive;\n  color: black;\n  text-align: center;\n  font-size: 50px;\n  border: 1px solid black; }\n\nh3 {\n  text-align: center;\n  font-size: 50px; }\n\na {\n  color: black; }\n\n.container {\n  padding-right: 1px;\n  padding-left: 1px;\n  margin-right: auto;\n  margin-left: auto; }\n\nbody {\n  font-family: cursive;\n  color: black;\n  background-color: whitesmoke;\n  border: 1px solid black; }\n\n.content {\n  font-size: 20px; }\n\n.footer > ul > li {\n  float: left;\n  margin-right: 100px; }\n\ndiv.footer {\n  border: 1px solid #bdbdbd;\n  padding: 20px;\n  margin: 0px; }\n\n.searchbox {\n  margin-top: 20px;\n  width: 150px; }\n", ""]);
 
 // exports
 
