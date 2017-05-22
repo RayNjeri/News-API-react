@@ -9,4 +9,10 @@ describe('Home Component', () => {
     const tree = shallowToJSON(footer);
     expect(tree).toMatchSnapshot();
   });
+  it('Should a list of items', () => {
+    const expected = ['About Us', 'Help'];
+    it('matches even if received contains additional elements', () => {
+      expect(['About Us', 'Help', 'Contact Us']).toEqual(expect.arrayContaining(expected));
+    });
+  });
 });

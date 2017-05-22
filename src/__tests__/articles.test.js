@@ -10,4 +10,9 @@ describe('Articles Component', () => {
     expect(articles.containsMatchingElement(<h3>Articles</h3>)).toBe(true);
     expect(tree).toMatchSnapshot();
   });
+  it('should render articles div class', () => {
+    const articles = shallow(<articles />);
+    expect(articles.find('articles')).toEqual.defined;
+  });
+
 });
