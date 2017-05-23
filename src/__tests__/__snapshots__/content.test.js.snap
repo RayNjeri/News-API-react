@@ -12,6 +12,9 @@ exports[`Content component Should have all the contents information 1`] = `
     >
       <Sources />
     </div>
+    <Articlesrender
+      articles={Array []}
+    />
     <div
       className="col-lg-2"
     >

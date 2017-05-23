@@ -2,17 +2,13 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import shallowToJSON from 'enzyme-to-json';
 import Articles from '../components/Articles';
+import Articlesrender from '../components/Articlesrender';
 
-describe('Articles Component', () => {
-  it('Snapshot of Articles Component', () => {
-    const articles = shallow(<Articles />);
-    const tree = shallowToJSON(articles);
-    expect(articles.containsMatchingElement(<h3>Articles</h3>)).toBe(true);
-    expect(tree).toMatchSnapshot();
-  });
-  it('should render articles div class', () => {
-    const articles = shallow(<articles />);
-    expect(articles.find('articles')).toEqual.defined;
+
+ it('renders props correctly', () => {
+    const wrapper = shallow(< Articles name="articles" />);
+    console.log(wrapper.instance().props);
+    expect(wrapper.instance().props.name).toBe('articles');
   });
 
-});
+

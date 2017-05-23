@@ -11,11 +11,6 @@ describe('Search component', () => {
         expect(tree).toMatchSnapshot();
     });
 
-    it('should display search button', () => {
-        const renderedComponent = shallow(<searchbox />);
-        expect(renderedComponent.find("search").node).toBeDefined();
-    });
-
     it('should display search text in the button', () => {
         const text = 'Search';
         const renderedComponent = shallow(<div>{'Search'}</div>);
