@@ -4,7 +4,7 @@ THE NEWS HUB is a simple and easy-to-use web application for the headlines curre
 
 **Features**
 
--view current news arcticles from a wide randge of selected sources.
+-view current news arcticles from a wide range of selected sources.
 -filter available news sources according to categories ie: country,language and category.
 -search for available sources.
 
