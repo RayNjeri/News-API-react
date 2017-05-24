@@ -13,7 +13,6 @@ describe('Content component', () => {
 
    it('renders props correctly', () => {
     const wrapper = shallow(<Content name="renderArticles" />);
-    console.log(wrapper.instance().props);
     expect(wrapper.instance().props.name).toBe('renderArticles');
   });
 

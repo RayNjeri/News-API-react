@@ -38,7 +38,6 @@ describe('Articles components', () => {
       const wrapper = mount(<Articles params={props.params}/>);
       wrapper.setState({articles: mockArticles});
       wrapper.update();
-      console.log('Param props', wrapper.instance().props);
       const articles = wrapper.find('div.col-lg-4');
       const title1 = wrapper.find('a.card-footer').first();
       expect(title1.text()).toBe(mockArticles[0].title);
@@ -47,7 +46,6 @@ describe('Articles components', () => {
 
  it('renders props correctly', () => {
     const wrapper = shallow(< Articles name="articles" />);
-    console.log(wrapper.instance().props);
     expect(wrapper.instance().props.name).toBe('articles');
   });
 

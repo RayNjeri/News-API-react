@@ -32,11 +32,39 @@ describe('Sources components', () => {
 
   it('the array should have more than one source', () => {
   const wrapper = mount(<Sources />);
-  wrapper.setState(mockSources);
+  wrapper.setState({sources: mockSources});
   wrapper.update();
   const sources = wrapper.find('.card-block');
-  console.log(wrapper.find('.col-md-10'));
   expect(sources.length).toBeGreaterThanOrEqual(1);
+});
+
+  it('handles changing filter key', () => {
+    const name = 'filterKey';
+    const value = 'country';
+    const wrapper = shallow(<Sources />);
+    const select = wrapper.find(`select[name='${name}']`).first();
+    // simulate change with event
+    const event = {
+      target: {name, value}
+    };
+    select.simulate('change', event);
+    // read state
+    const state = wrapper.state();
+    // assert state.currentFilter has same filter as in event.
+    expect(state.currentFilter.filterKey).toEqual(value);
+  });
+
+  it('handles changing filter value', () =>{
+    const name = 'filterValue';
+    const value = 'business';
+    const wrapper = shallow(<Sources />);
+    const select = wrapper.find(`select[name='${name}']`).first();
+    const event = {
+      target: {name, value}
+    };
+    select.simulate('change', event);
+    const state = wrapper.state();
+    expect(state.currentFilter.filterValue).toEqual(value);
   });
 
   it('snapshot for  Sources component', () => {
@@ -53,7 +81,6 @@ describe('Sources components', () => {
 
   it('renders props correctly', () => {
     const wrapper = shallow(<Sources name="sources" />);
-    console.log(wrapper.instance().props);
     expect(wrapper.instance().props.name).toBe('sources');
   });
 
