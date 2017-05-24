@@ -1,7 +1,7 @@
 import React from 'react';
 import Articles from './Articles';
 
-export default class Articlesrender extends React.Component {
+export default class ArticlesRender extends React.Component {
   render() {
     return (
       < div className="articles col-lg-8">

@@ -1,6 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
-import Articlesrender from './Articlesrender';
+import ArticlesRender from './ArticlesRender';
 
 export default class Articles extends React.Component {
   constructor() {
@@ -29,7 +29,7 @@ export default class Articles extends React.Component {
 
   render() {
     return (
-      <Articlesrender articles={this.state.articles} />
+      <ArticlesRender articles={this.state.articles} />
     );
   }
 };

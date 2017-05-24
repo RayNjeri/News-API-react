@@ -3,7 +3,7 @@ import Axios from 'axios';
 import Sources from './Sources';
 import Articles from './Articles';
 import Search from './Sourcesearch';
-import Articlesrender from './Articlesrender';
+import ArticlesRender from './ArticlesRender';
 
 export default class Content extends React.Component {
   constructor() {
@@ -26,6 +26,7 @@ export default class Content extends React.Component {
   componentDidMount() {
     this.renderArticles();
   };
+
   render() {
     return (
       <div className="content">
@@ -34,7 +35,7 @@ export default class Content extends React.Component {
           {this.props.children ?
             this.props.children
             :
-            <Articlesrender articles={this.state.articles} />
+            <ArticlesRender articles={this.state.articles} />
           }
           <div className="col-lg-2"><Search /></div>
         </div>

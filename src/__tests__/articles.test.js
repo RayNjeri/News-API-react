@@ -2,7 +2,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import shallowToJSON from 'enzyme-to-json';
 import Articles from '../components/Articles';
-import Articlesrender from '../components/Articlesrender';
+import ArticlesRender from '../components/ArticlesRender';
 
 const mockArticles = [
 {
