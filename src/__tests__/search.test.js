@@ -1,12 +1,11 @@
 import React from 'react';
 import { mount, shallow } from 'enzyme';
 import shallowToJSON from 'enzyme-to-json';
-import ReactTestUtils from 'react-dom/test-utils';
-import Search from '../components/Sourcesearch';
+import SourcesSearch from '../components/Sourcesearch';
 
-describe('Search component', () => {
-    it('Should have a search button', () => {
-        const search = shallow(<Search />);
+describe('SourcesSearch component', () => {
+    it('Should have a Search button', () => {
+        const search = shallow(<SourcesSearch />);
         const tree = shallowToJSON(search);
         expect(tree).toMatchSnapshot();
     });
@@ -20,4 +19,16 @@ describe('Search component', () => {
     it("trigger onSearch correctly", () => {
         const handleSearch = jest.fn();
     });
+
+    it('should display searched Sources', () => {
+    let mockSearch = jest.fn();
+    const wrapper = mount(<SourcesSearch updateSearch={mockSearch} />);
+    expect(wrapper).toBeDefined();
+  });
+
+    it('check for presence of div elements', () => {
+    const wrapper = shallow(<div></div>);
+    expect(wrapper.find('div').node).toBeDefined();
+  });
+
 });

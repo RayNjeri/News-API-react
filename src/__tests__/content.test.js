@@ -10,4 +10,21 @@ describe('Content component', () => {
     const tree = shallowToJSON(contents);
     expect(tree).toMatchSnapshot();
   });
+
+   it('renders props correctly', () => {
+    const wrapper = shallow(<Content name="renderArticles" />);
+    console.log(wrapper.instance().props);
+    expect(wrapper.instance().props.name).toBe('renderArticles');
+  });
+
+  it('should display Articles', () => {
+    let mockDisplay = jest.fn();
+    const wrapper = mount(<Content renderArticles={mockDisplay} />);
+    expect(wrapper).toBeDefined();
+  });
+
+   it('check for presence of div elements', () => {
+    const wrapper = shallow(<div></div>);
+    expect(wrapper.find('div').node).toBeDefined();
+  });
 });    

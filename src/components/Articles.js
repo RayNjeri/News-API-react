@@ -18,14 +18,15 @@ export default class Articles extends React.Component {
           articles: result.data.articles
         });
       });
-
   }
+
   componentDidMount() {
     this.renderArticles(this.props.params.sourceId, this.props.params.sortBy);
   };
   componentWillReceiveProps(nextProps) {
     this.renderArticles(nextProps.params.sourceId, nextProps.params.sortBy);
   }
+
   render() {
     return (
       <Articlesrender articles={this.state.articles} />

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Search component Should have a search button 1`] = `
+exports[`SourcesSearch component Should have a Search button 1`] = `
 <div
   className="col-md-2"
   id="search"

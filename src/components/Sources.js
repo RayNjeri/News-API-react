@@ -44,14 +44,19 @@ export default class Sources extends React.Component {
   };
 
   componentDidMount() {
-    Axios
-      .get('https://newsapi.org/v1/sources')
-      .then(({ data }) => {
+    this.displaySources();
+  };
+  
+  displaySources(){
+    let URL = 'https://newsapi.org/v1/sources';
+    Axios.get(URL)
+    .then(({ data }) => {
         this.setState((prevState) => ({
           sources: data
         }));
       });
-  };
+
+  }
 
   handleFilterChange(event) {
     const { name, value } = event.target;
