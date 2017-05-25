@@ -12,7 +12,7 @@ exports[`Content component Should have all the contents information 1`] = `
     >
       <Sources />
     </div>
-    <Articlesrender
+    <ArticlesRender
       articles={Array []}
     />
     <div

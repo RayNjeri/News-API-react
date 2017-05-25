@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/RayNjeri/News-API-react.svg?branch=master)](https://travis-ci.org/RayNjeri/News-API-react)
+
 **THE NEWS HUB.**
 
 THE NEWS HUB is a simple and easy-to-use web application for the headlines currently published on a range of news sources and blogs (70 and counting so far).
