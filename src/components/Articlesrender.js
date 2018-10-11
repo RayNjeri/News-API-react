@@ -1,5 +1,4 @@
 import React from 'react';
-import Articles from './Articles';
 
 export default class ArticlesRender extends React.Component {
   render() {
